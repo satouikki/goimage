@@ -1,0 +1,11 @@
+DROP TABLE IF EXISTS data;
+
+CREATE TABLE IF NOT EXISTS data
+(
+ id        INT(20) AUTO_INCREMENT,
+ host       VARCHAR(20) DEFAULT NULL,
+ date       VARCHAR(200) DEFAULT NULL,
+ PRIMARY KEY (`id`),
+  INDEX id_index(id)
+) DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
